@@ -34,6 +34,7 @@
             this.cboGen = new System.Windows.Forms.ComboBox();
             this.txtAmt = new System.Windows.Forms.TextBox();
             this.btnSelect = new System.Windows.Forms.Button();
+            this.btnAllTran = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,11 +94,22 @@
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
+            // btnAllTran
+            // 
+            this.btnAllTran.Location = new System.Drawing.Point(13, 75);
+            this.btnAllTran.Name = "btnAllTran";
+            this.btnAllTran.Size = new System.Drawing.Size(122, 23);
+            this.btnAllTran.TabIndex = 7;
+            this.btnAllTran.Text = "All Transactions";
+            this.btnAllTran.UseVisualStyleBackColor = true;
+            this.btnAllTran.Click += new System.EventHandler(this.btnAllTran_Click);
+            // 
             // Transactions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAllTran);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.txtAmt);
             this.Controls.Add(this.cboGen);
@@ -121,5 +133,6 @@
         private System.Windows.Forms.ComboBox cboGen;
         private System.Windows.Forms.TextBox txtAmt;
         private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.Button btnAllTran;
     }
 }

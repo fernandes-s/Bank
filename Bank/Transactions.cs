@@ -97,5 +97,20 @@ namespace Bank
             dgv.DataSource = dt;
             dao.CloseCon();
         }
+
+        private void btnAllTran_Click(object sender, EventArgs e)
+        {
+            da = new SqlDataAdapter();
+            dt = new DataTable();
+
+            SqlCommand cmd = dao.OpenCon().CreateCommand();
+            cmd.CommandText = "uspAllTrans";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+            dgv.DataSource = dt;
+            dao.CloseCon();
+        }
     }
 }
